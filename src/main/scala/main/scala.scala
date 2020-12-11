@@ -7,11 +7,11 @@ object scala {
     val config = List("AB5", "BC4", "CD8", "DC8", "DE6", "AD5", "CE2", "EB3", "AE7")
     val map = prepareMap(config)
     val graph = new WeightedGraph[Char](map)
-
+   println(graph.findTotalDistance("ABC".toList))
+    println(graph.findTotalDistance("AD".toList))
   }
 
-  // preCondition: each string is in correct format
-  // postCondition: return empty map in case of any error
+
   def prepareMap(list : List[String]): Map[Char, List[WeightedEdge[Char]]] ={
     try {
       list
