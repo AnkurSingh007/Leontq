@@ -7,7 +7,7 @@ object scala {
     val config = List("AB5", "BC4", "CD8", "DC8", "DE6", "AD5", "CE2", "EB3", "AE7")
     val map = prepareMap(config)
     val graph = new WeightedGraph[Char](map)
-    println(graph.vertices)
+
   }
 
   // preCondition: each string is in correct format
